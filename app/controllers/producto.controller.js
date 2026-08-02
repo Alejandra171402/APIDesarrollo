@@ -137,7 +137,7 @@ exports.deleteAll = (req, res) => {
 
 // find all active Product, basado en el atributo status vamos a buscar que solo los productos activos
 exports.findAllStatus = (req, res) => {
-    Producto.findAll({ where: { status: true } })
+    Producto.findAll({ where: { estado: true } })
         .then(data => {
             res.send(data);
         })
