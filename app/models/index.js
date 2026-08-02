@@ -39,9 +39,9 @@ db.sequelize = sequelize;
 // Le pasamos la instancia de conexión `sequelize` y la clase `Sequelize` como argumentos
 db.clientes = require("./cliente.model.js")(sequelize, Sequelize);
 db.productos = require("./producto.model.js")(sequelize, Sequelize);
-
-// Aquí puedes seguir importando otros modelos de forma similar
-// Ejemplo: db.productos = require("./producto.model.js")(sequelize, Sequelize);
+db.empleados = require("./empleado.model.js")(sequelize, Sequelize);
+db.proveedores = require("./proveedor.model.js")(sequelize, Sequelize);
+db.departamentos = require("./departamento.model.js")(sequelize, Sequelize);
 
 // Exportamos el objeto `db` para que pueda ser usado por otros módulos (por ejemplo, en el `server.js`)
 module.exports = db;
