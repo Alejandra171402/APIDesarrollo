@@ -1,0 +1,851 @@
+{
+  "info": {
+    "name": "API Node/Postgres/Express - Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Colecciu00f3n de pruebas: 1 request por endpoint y mu00e9todo (create, findAll, findAllStatus, findOne, update, delete, deleteAll) para cada recurso."
+  },
+  "item": [
+    {
+      "name": "Cliente (customer)",
+      "item": [
+        {
+          "name": "Crear Cliente (customer)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/create/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "create"
+              ]
+            },
+            "description": "Crea un nuevo registro. Requiere 'nombre'.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan\",\n  \"apellido\": \"Perez\",\n  \"direccion\": \"Calle 123\",\n  \"correo\": \"juan@mail.com\",\n  \"telefono\": \"5551234\",\n  \"ingreso\": \"2026-08-02\",\n  \"status\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar todos Cliente (customer)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer"
+              ]
+            },
+            "description": "Retorna todos. Filtro opcional ?nombre="
+          }
+        },
+        {
+          "name": "Listar por status Cliente (customer)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/status",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "status"
+              ]
+            },
+            "description": "Retorna solo activos/publicados."
+          }
+        },
+        {
+          "name": "Obtener por id Cliente (customer)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "1"
+              ]
+            },
+            "description": "Retorna un registro por id (cambia el 1)."
+          }
+        },
+        {
+          "name": "Actualizar Cliente (customer)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/update/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "update",
+                "1"
+              ]
+            },
+            "description": "Actualiza el registro con id=1.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan (editado)\",\n  \"apellido\": \"Perez\",\n  \"direccion\": \"Calle 123\",\n  \"correo\": \"juan@mail.com\",\n  \"telefono\": \"5551234\",\n  \"ingreso\": \"2026-08-02\",\n  \"status\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar por id Cliente (customer)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/delete/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "delete",
+                "1"
+              ]
+            },
+            "description": "Elimina el registro con id=1."
+          }
+        },
+        {
+          "name": "Eliminar todos Cliente (customer)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/customer/delete/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "customer",
+                "delete"
+              ]
+            },
+            "description": "Elimina TODOS los registros. Usar con cuidado."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Departamento",
+      "item": [
+        {
+          "name": "Crear Departamento",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/create/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "create"
+              ]
+            },
+            "description": "Crea un nuevo registro. Requiere 'nombre'.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ventas\",\n  \"descripcion\": \"Area comercial\",\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar todos Departamento",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento"
+              ]
+            },
+            "description": "Retorna todos. Filtro opcional ?nombre="
+          }
+        },
+        {
+          "name": "Listar por status Departamento",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/status",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "status"
+              ]
+            },
+            "description": "Retorna solo activos/publicados."
+          }
+        },
+        {
+          "name": "Obtener por id Departamento",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "1"
+              ]
+            },
+            "description": "Retorna un registro por id (cambia el 1)."
+          }
+        },
+        {
+          "name": "Actualizar Departamento",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/update/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "update",
+                "1"
+              ]
+            },
+            "description": "Actualiza el registro con id=1.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ventas (editado)\",\n  \"descripcion\": \"Area comercial\",\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar por id Departamento",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/delete/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "delete",
+                "1"
+              ]
+            },
+            "description": "Elimina el registro con id=1."
+          }
+        },
+        {
+          "name": "Eliminar todos Departamento",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/departamento/delete/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "departamento",
+                "delete"
+              ]
+            },
+            "description": "Elimina TODOS los registros. Usar con cuidado."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Empleado",
+      "item": [
+        {
+          "name": "Crear Empleado",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/create/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "create"
+              ]
+            },
+            "description": "Crea un nuevo registro. Requiere 'nombre'.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ana\",\n  \"apellido\": \"Lopez\",\n  \"direccion\": \"Av. Central 45\",\n  \"correo\": \"ana@mail.com\",\n  \"telefono\": \"5555678\",\n  \"puesto\": \"Vendedor\",\n  \"salario\": 8500.0,\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar todos Empleado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado"
+              ]
+            },
+            "description": "Retorna todos. Filtro opcional ?nombre="
+          }
+        },
+        {
+          "name": "Listar por status Empleado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/status",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "status"
+              ]
+            },
+            "description": "Retorna solo activos/publicados."
+          }
+        },
+        {
+          "name": "Obtener por id Empleado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "1"
+              ]
+            },
+            "description": "Retorna un registro por id (cambia el 1)."
+          }
+        },
+        {
+          "name": "Actualizar Empleado",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/update/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "update",
+                "1"
+              ]
+            },
+            "description": "Actualiza el registro con id=1.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ana (editado)\",\n  \"apellido\": \"Lopez\",\n  \"direccion\": \"Av. Central 45\",\n  \"correo\": \"ana@mail.com\",\n  \"telefono\": \"5555678\",\n  \"puesto\": \"Vendedor\",\n  \"salario\": 8500.0,\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar por id Empleado",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/delete/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "delete",
+                "1"
+              ]
+            },
+            "description": "Elimina el registro con id=1."
+          }
+        },
+        {
+          "name": "Eliminar todos Empleado",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/empleado/delete/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "empleado",
+                "delete"
+              ]
+            },
+            "description": "Elimina TODOS los registros. Usar con cuidado."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Producto",
+      "item": [
+        {
+          "name": "Crear Producto",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/create/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "create"
+              ]
+            },
+            "description": "Crea un nuevo registro. Requiere 'nombre'.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Teclado\",\n  \"precio\": 250.0,\n  \"costo\": 150.0,\n  \"stock\": 30,\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar todos Producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto"
+              ]
+            },
+            "description": "Retorna todos. Filtro opcional ?nombre="
+          }
+        },
+        {
+          "name": "Listar por status Producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/status",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "status"
+              ]
+            },
+            "description": "Retorna solo activos/publicados."
+          }
+        },
+        {
+          "name": "Obtener por id Producto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "1"
+              ]
+            },
+            "description": "Retorna un registro por id (cambia el 1)."
+          }
+        },
+        {
+          "name": "Actualizar Producto",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/update/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "update",
+                "1"
+              ]
+            },
+            "description": "Actualiza el registro con id=1.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Teclado (editado)\",\n  \"precio\": 250.0,\n  \"costo\": 150.0,\n  \"stock\": 30,\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar por id Producto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/delete/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "delete",
+                "1"
+              ]
+            },
+            "description": "Elimina el registro con id=1."
+          }
+        },
+        {
+          "name": "Eliminar todos Producto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/producto/delete/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "producto",
+                "delete"
+              ]
+            },
+            "description": "Elimina TODOS los registros. Usar con cuidado."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Proveedor",
+      "item": [
+        {
+          "name": "Crear Proveedor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/create/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "create"
+              ]
+            },
+            "description": "Crea un nuevo registro. Requiere 'nombre'.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Tech SA\",\n  \"contacto\": \"Carlos Ruiz\",\n  \"direccion\": \"Zona 10\",\n  \"correo\": \"ventas@techsa.com\",\n  \"telefono\": \"5559999\",\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Listar todos Proveedor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor"
+              ]
+            },
+            "description": "Retorna todos. Filtro opcional ?nombre="
+          }
+        },
+        {
+          "name": "Listar por status Proveedor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/status",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "status"
+              ]
+            },
+            "description": "Retorna solo activos/publicados."
+          }
+        },
+        {
+          "name": "Obtener por id Proveedor",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "1"
+              ]
+            },
+            "description": "Retorna un registro por id (cambia el 1)."
+          }
+        },
+        {
+          "name": "Actualizar Proveedor",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/update/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "update",
+                "1"
+              ]
+            },
+            "description": "Actualiza el registro con id=1.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Tech SA (editado)\",\n  \"contacto\": \"Carlos Ruiz\",\n  \"direccion\": \"Zona 10\",\n  \"correo\": \"ventas@techsa.com\",\n  \"telefono\": \"5559999\",\n  \"ingreso\": \"2026-08-02\",\n  \"estado\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Eliminar por id Proveedor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/delete/1",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "delete",
+                "1"
+              ]
+            },
+            "description": "Elimina el registro con id=1."
+          }
+        },
+        {
+          "name": "Eliminar todos Proveedor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://apirestdw.onrender.com/api/proveedor/delete/",
+              "host": [
+                "https://apirestdw.onrender.com"
+              ],
+              "path": [
+                "api",
+                "proveedor",
+                "delete"
+              ]
+            },
+            "description": "Elimina TODOS los registros. Usar con cuidado."
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://apirestdw.onrender.com",
+      "type": "string"
+    }
+  ]
+}
