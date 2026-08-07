@@ -1,21 +1,16 @@
 module.exports = app => {
-    const clientes = require("../controllers/cliente.controller.js");
-    var router = require("express").Router();
-    // Create a new Client
-    router.post("/create/", clientes.create);
-    // Retrieve all Client
-    router.get("/", clientes.findAll);
-    // Retrieve all published Client
-    router.get("/status", clientes.findAllStatus);
-    // Retrieve a single Client with id
-    router.get("/:id", clientes.findOne);
-    // Update a Client with id
-    router.put("/update/:id", clientes.update);
-    // Delete a Client with id
-    router.delete("/delete/:id", clientes.delete);
-    // Delete all Cliente
-    router.delete("/delete/", clientes.deleteAll);
-    // Podemos utilizar como una ocpion app.use("EndPoint",router" para simplicar el URI
-    // Ej.  http://localhost:Puerto/api/cliente/
-    app.use("/api/customer", router);
+  const clientes = require("../controllers/cliente.controller.js");
+  const { verifyToken } = require("../middlewares/authJwt.js");
+  var router = require("express").Router();
+
+  // Protegemos creación, actualización y borrado con verifyToken
+  router.post("/create/", [verifyToken], clientes.create);
+  router.get("/", clientes.findAll); // lectura pública, sin token, como ejemplo de ruta mixta
+  router.get("/status", clientes.findAllStatus);
+  router.get("/:id", clientes.findOne);
+  router.put("/update/:id", [verifyToken], clientes.update);
+  router.delete("/delete/:id", [verifyToken], clientes.delete);
+  router.delete("/delete/", [verifyToken], clientes.deleteAll);
+
+  app.use("/api/customer", router);
 };

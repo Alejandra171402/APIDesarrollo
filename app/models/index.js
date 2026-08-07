@@ -1,5 +1,6 @@
 // Cargamos el archivo de configuración que contiene los datos de conexión a la base de datos
 const dbConfig = require("../config/db.config.js");
+db.usuarios = require("./usuario.model.js")(sequelize, Sequelize);
 
 // Importamos Sequelize, el ORM que nos permite trabajar con PostgreSQL como objetos JS
 const Sequelize = require("sequelize");
