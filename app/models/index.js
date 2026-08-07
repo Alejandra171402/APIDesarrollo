@@ -1,6 +1,5 @@
 // Cargamos el archivo de configuración que contiene los datos de conexión a la base de datos
 const dbConfig = require("../config/db.config.js");
-db.usuarios = require("./usuario.model.js")(sequelize, Sequelize);
 
 // Importamos Sequelize, el ORM que nos permite trabajar con PostgreSQL como objetos JS
 const Sequelize = require("sequelize");
@@ -29,6 +28,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 
 // Creamos un objeto `db` que exportaremos para acceder a Sequelize y los modelos desde otras partes del proyecto
 const db = {};
+db.usuarios = require("./usuario.model.js")(sequelize, Sequelize);
 
 // Asignamos la clase Sequelize al objeto `db`, útil si se requiere usar métodos del ORM manualmente
 db.Sequelize = Sequelize;
