@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "Cliente (customer)",
+      "name": "ClientesAle",
       "item": [
         {
           "name": "Crear Cliente (customer)",
@@ -19,9 +19,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/create/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/create/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -47,9 +47,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -65,9 +65,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/status",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/status",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -84,9 +84,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -108,9 +108,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/update/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/update/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -137,9 +137,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/delete/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/delete/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -157,9 +157,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/customer/delete/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/customer/delete/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "name": "Departamento",
+      "name": "DepartamentosAle",
       "item": [
         {
           "name": "Crear Departamento",
@@ -186,9 +186,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/create/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/create/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -214,9 +214,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -232,9 +232,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/status",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/status",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -251,9 +251,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -275,9 +275,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/update/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/update/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -304,9 +304,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/delete/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/delete/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -324,9 +324,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/departamento/delete/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/departamento/delete/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -340,7 +340,7 @@
       ]
     },
     {
-      "name": "Empleado",
+      "name": "EmpleadosAle",
       "item": [
         {
           "name": "Crear Empleado",
@@ -353,9 +353,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/create/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/create/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -381,9 +381,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -399,9 +399,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/status",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/status",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -418,9 +418,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -442,9 +442,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/update/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/update/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -471,9 +471,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/delete/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/delete/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -491,9 +491,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/empleado/delete/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/empleado/delete/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "name": "Producto",
+      "name": "ProductosAle",
       "item": [
         {
           "name": "Crear Producto",
@@ -520,9 +520,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/create/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/create/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -548,9 +548,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -566,9 +566,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/status",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/status",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -585,9 +585,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -609,9 +609,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/update/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/update/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -638,9 +638,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/delete/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/delete/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -658,9 +658,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/producto/delete/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/producto/delete/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -674,7 +674,7 @@
       ]
     },
     {
-      "name": "Proveedor",
+      "name": "ProveedoresAle",
       "item": [
         {
           "name": "Crear Proveedor",
@@ -687,9 +687,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/create/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/create/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -715,9 +715,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -733,9 +733,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/status",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/status",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -752,9 +752,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -776,9 +776,9 @@
               }
             ],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/update/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/update/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -805,9 +805,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/delete/1",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/delete/1",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -825,9 +825,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "https://apirestdw.onrender.com/api/proveedor/delete/",
+              "raw": "https://apidesarrollo-my9r.onrender.com/api/proveedor/delete/",
               "host": [
-                "https://apirestdw.onrender.com"
+                "https://apidesarrollo-my9r.onrender.com"
               ],
               "path": [
                 "api",
@@ -844,7 +844,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "https://apirestdw.onrender.com",
+      "value": "https://apidesarrollo-my9r.onrender.com",
       "type": "string"
     }
   ]
