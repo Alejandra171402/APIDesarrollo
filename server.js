@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-require("./app/routes/auth.route")(app);
+require("./app/routes/auth.routes")(app);
 
 const app = express();
 
