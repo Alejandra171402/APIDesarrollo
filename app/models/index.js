@@ -44,6 +44,7 @@ db.empleados = require("./empleado.model.js")(sequelize, Sequelize);
 db.proveedores = require("./proveedor.model.js")(sequelize, Sequelize);
 db.departamentos = require("./departamento.model.js")(sequelize, Sequelize);
 db.sucursales = require("./sucursal.model.js")(sequelize, Sequelize);
+db.sucursales = require("./pelicula.model.js")(sequelize, Sequelize);
 
 // Exportamos el objeto `db` para que pueda ser usado por otros módulos (por ejemplo, en el `server.js`)
 module.exports = db;
