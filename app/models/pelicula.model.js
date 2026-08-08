@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         duracion: {
-            type: Sequelize.INT
+            type: Sequelize.INTEGER
         },
         tipo_De_Serie: {
             type: Sequelize.STRING
