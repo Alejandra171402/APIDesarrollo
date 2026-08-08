@@ -12,5 +12,5 @@ module.exports = app => {
   router.delete("/delete/:id", [verifyToken], sucursals.delete);
   router.delete("/delete/", [verifyToken], sucursals.deleteAll);
 
-  app.use("/api/customer", router);
+  app.use("/api/sucursal", router);
 };
